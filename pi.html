@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cs/mycss.css" type="text/css" />
+    <style>
+    
+      */
+      :focus{
+        box-shadow: 2px 2px 2px red;
+      }
+      */
+      :checked + label{
+        box-shadow: 2px 2px 2px green;
+      }
+      */
+      :disabled{
+        background-color: gold;
+      }
+      :enabled{
+        background-color: aqua;
+      }
+      :required{
+        border: 5px solid greenyellow;
+      }
+      input :optional,textarea:optional,select:optional{
+        border: 2px 2px 2px green;
+
+      }
+      :read-only{
+        background-color: burlywood;
+      }
+
+      input:read-write{
+        background-color: chartreuse;
+      }
+      :in-range{
+        background-color: coral;
+        color:red;
+      }
+      :out-of-range{
+        background-color: blueviolet;
+        color: goldenrod;
+      }
+      :valid{
+        background-color: coral;
+        color:red;
+      }
+      :invalid{
+        background-color: blueviolet;
+        color: goldenrod;
+      }
+
+      
+    </style>
+   
+  </head>
+  <body>
+    <h1 id="piheading">Registration form</h1>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <table>
+        <tr>
+          <td><label for="">User Id</label></td>
+          <td>
+            <input type="text" name="" id="" readonly placeholder="Enter " />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">User Name</label></td>
+          <td>
+            <input
+              type="password"
+              name=""
+              id=""
+              required
+              placeholder="Enter "
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Password</label></td>
+          <td>
+            <input type="text" name="" id="" required placeholder="Enter " />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Firstname</label></td>
+          <td><input type="text" class="common" name="" id="" placeholder="Enter " /></td>
+        </tr>
+        <tr>
+          <td><label for="">Lastname</label></td>
+          <td>
+            <input type="text" class="common" name="" id="" placeholder="Enter " disabled />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Email</label></td>
+          <td><input type="email" class="common" name="" id="" placeholder="Enter " /></td>
+        </tr>
+        <tr>
+          <td><label for="">Mobile</label></td>
+          <td><input type="number" name="" placeholder="Enter " id="" /></td>
+        </tr>
+        <tr>
+          <td><label for="" placeholder="Enter ">Address</label></td>
+          <td><textarea></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="" placeholder="Enter ">Age</label></td>
+          <td><input type="number" min="18" max="60" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Gender</label></td>
+          <td>
+            <input type="radio" name="rdo" id="m" /><label for="m">Male</label>
+            <input type="radio" name="rdo" id="f" /><label for="f"
+              >Female</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Hobbies</label></td>
+          <td>
+            <input type="checkbox" name="" id="" /><label for="">Music</label>
+            <input type="checkbox" name="" id="" /><label for="">Hiking</label>
+            <input type="checkbox" name="" id="" /><label for=""
+              >Painting</label
+            >
+            <input type="checkbox" name="" id="" /><label for="">Cricket</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">City</label></td>
+          <td>
+            <select>
+              <option value="DDN">Dehradun</option>
+              <option value="RRK">Roorkee</option>
+              <option value="YNRK">Rishikesh</option>
+              <option value="HW">Haridwar</option>
+              <option value="TI">Tehri</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <a href="./aq.html"><button>Acamedic Qualification Page</button></a>
+    </fieldset>
+  </body>
+</html>
