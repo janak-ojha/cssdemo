@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            
+        }
+     
+        .container{
+            
+            font-family: jokerman;
+            color: navy;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .container > *{
+            padding: 5px;
+            text-align: center;
+            flex:1 100%;
+            
+        }
+        .header{
+            background-color: aqua;
+            height: 20vh;
+
+        }
+        .aside{
+            background-color: blue;
+            
+
+        }
+        .aside1{
+            background-color: blueviolet;
+            height: 70vh;
+
+        }
+        .article{
+            background-color: brown;
+
+        }
+        .article2{
+            background-color: cadetblue;
+
+        }
+        .footer{
+            background-color: green;
+            height: 10vh;
+
+        }
+        @media(min-width:600px){
+            .aside{
+                flex:1 0%;
+
+            }
+        }
+        @media(min-width:800px){
+            .article{
+                flex:5 0%;
+                order: 3;
+
+            }
+            .header{
+                order: 1;
+            }
+            .aside1{
+                order: 2;
+            }
+            .aside2{
+                order: 4;
+            }
+            .footer{
+                order: 5;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            Header
+
+        </header>
+        <article class="article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi mollitia pariatur similique voluptatibus, a impedit. Quod incidunt eos doloremque fugit nihil, nisi ex blanditiis fuga quas illo adipisci, tempora possimus debitis. Minus explicabo iure officia culpa eveniet pariatur asperiores ducimus, nemo natus qui perferendis ab eius consequatur eum. Vel nostrum consequatur non inventore magnam modi incidunt unde sed eveniet dolore, fugit reiciendis eaque, amet voluptates accusamus quia ratione placeat ipsa blanditiis voluptatum aperiam perferendis. A sed id maxime, sequi minus molestias mollitia assumenda illum quisquam quidem praesentium enim, incidunt officiis, placeat in porro optio aliquid dignissimos. Vero doloremque culpa fugit, voluptatem perspiciatis perferendis deleniti, ut sunt doloribus voluptatibus eligendi tempore nam dolor velit possimus quae ipsa dignissimos est? Praesentium inventore natus iure nesciunt fuga at laborum iusto. Atque aspernatur iure quaerat quam laboriosam, aliquam culpa eius! Incidunt itaque rem repudiandae, minima harum eaque repellendus similique, dolor asperiores consequuntur hic adipisci nesciunt ducimus commodi vel quasi necessitatibus unde earum nisi quisquam, voluptates obcaecati ab saepe! Nobis doloribus accusamus nulla pariatur cum sed ipsam, corporis id, quo quae nostrum sunt hic maxime a? In, quas tempore possimus consectetur, inventore necessitatibus magnam beatae aperiam doloribus praesentium exercitationem quaerat cum quis cupiditate? Esse, minima!</p>
+        </article>
+        <aside class="aside1 aside">Aside1</aside>
+        <aside class="aside2 aside">Aside2</aside>
+        <footer class="footer">footee</footer>
+    </div>
+    
+</body>
+</html>
