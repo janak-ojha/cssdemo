@@ -1,0 +1,48 @@
+.container{
+    height: 500px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    grid-template-columns: repeat(12,1fr) ;
+    grid-template-rows: 100px 70vh 100px;
+    grid-template-areas:"h h h h h h h h h h c c"
+                        "m m m m m m m m m m c c"
+                        "f f f f f f f f f f c c" ;
+    display: grid;
+    
+}
+.child{
+    border: 2px solid red;
+    background-color: rgb(161, 127, 255);
+    color: rgb(255, 173, 173);
+    text-align: center;
+}
+.header{
+    background-color: rebeccapurple;
+    grid-area: h;
+  
+
+}
+.child{
+    background-color: gray;
+}
+.footer{
+    background-color: blue;
+    grid-area: f;
+    
+
+
+}
+.content{
+    background-color: red;
+    grid-area: c;
+}
+.menu{
+    background-color: aqua;
+    grid-area: m;
+   
+  
+   
+  
+}

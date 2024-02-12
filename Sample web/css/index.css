@@ -74,12 +74,54 @@ aside{
     
     
 }
-@media(max-width:760px)
+@media(max-width:768px)
 {
-    header>*{
+    #main{
         flex-direction: column;
     }
+    article{
+        order: -1;
+
+    }
+    aside a{
+        font-size: 30px;
+        text-align: center;
+        display: block;
+    }
+   
+}
+@media(max-width:590px)
+{  
+     header *{
+    padding: 5px;
+    margin: 2px;
+    }
+    header{
+        flex-direction: column;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    #logo{
+        order: -1;
+    }
+    #social-links li
+    {
+        display: none;
+    }
+
+}  
+@media(max-width:300px) {
+   
     #service-container{
         flex-direction: column;
     }
+    header{
+        font-size: 0.9rem;
+    }
+    *{
+        width: 3px;
+    }
+    
 }
+
+
