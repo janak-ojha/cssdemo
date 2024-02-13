@@ -1,0 +1,44 @@
+h1{
+    font-size: 50px;
+    font-family: bolder;
+    background : linear-gradient(to right bottom,red green blue);
+    font-family: cursive;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    background-image: url(https://source.unsplash.com/300x500/?himalaya);
+    
+}
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    gap: 4px;
+
+}
+.container > *{
+    border: 4px solid rgb(39, 14, 11);
+    background-color: antiquewhite;
+    color: tomato;
+    text-align: center;
+    border-radius: 10px;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+.l{
+    grid-column: span 2;
+}
+.p{
+    grid-row: span 2;
+}
+.b{
+    grid-column: span 2;
+    grid-row: span 2;
+}
